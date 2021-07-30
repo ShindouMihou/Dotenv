@@ -9,6 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public abstract class NormalDotenv implements Dotenv {
 
@@ -135,7 +136,7 @@ public abstract class NormalDotenv implements Dotenv {
      * @return Does the key-value pair exist.
      */
     public boolean isNull(String key) {
-        return loadSystemEnv ? (!map.containsKey(key) || System.getenv(key) == null) :
+        return loadSystemEnv ? !map.containsKey(key) && Objects.isNull(System.getenv(key)) :
         !map.containsKey(key);
     }
 

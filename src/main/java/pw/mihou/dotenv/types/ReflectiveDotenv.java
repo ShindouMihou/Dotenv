@@ -146,13 +146,13 @@ public class ReflectiveDotenv extends NormalDotenv {
                     String value = "";
                     if(field.isAnnotationPresent(EnvironmentItem.class)) {
                         EnvironmentItem i = field.getAnnotation(EnvironmentItem.class);
-                        if(!i.comment().isEmpty() && !i.comment().isBlank())
+                        if(!i.comment().isEmpty())
                             comment = i.comment();
 
-                        if(!i.key().isBlank() && !i.key().isEmpty())
+                        if(!i.key().isEmpty())
                             name = i.key();
 
-                        if(!i.value().isBlank() && !i.value().isEmpty())
+                        if(!i.value().isEmpty())
                             value = i.value();
                     }
 

@@ -6,7 +6,7 @@
 
     <groupId>pw.mihou</groupId>
     <artifactId>Dotenv</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <name>Dotenv</name>
     <url>https://github.com/ShindouMihou/Dotenv/</url>
     <description>A simple, dependency-free dotenv serializator and deserializator for Java.</description>
