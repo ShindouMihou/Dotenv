@@ -1,5 +1,5 @@
 ## :tada: Dotenv
-A simple, dependency-free dotenv serializator and deserializator for Java that is able to use
+A simple, dependency-free dotenv serialization and deserialization for Java that is able to use
 reflection to fill in variables for you.
 
 ## :package: What makes this different from the other Dotenv library?
