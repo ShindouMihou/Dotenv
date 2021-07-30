@@ -117,7 +117,7 @@ anotherKey=ARandomValue
 ```java
 class Configuration {
 
-  @ConfigurationItem(name = "key")
+  @EnvironmentItem(name = "key")
   public static String someKey;
   public static SomeEntity someEntity;
 
@@ -140,7 +140,7 @@ ARandomKey
 ARandomValue ARandomKey
 ```
 
-Now, you might have noticed the annotation `ConfigurationItem` which is a special annotation used by this library to parse or generate environment variables. For parsing, 
+Now, you might have noticed the annotation `EnvironmentItem` which is a special annotation used by this library to parse or generate environment variables. For parsing, 
 the only value supported on the annotation is `name` but you can also set the `comment` and `value` values of the annotation to specify what comment should be generated on 
 generation of a new `.env` file when you call `ReflectiveDotenv#create(...)`, please read below for more information.
 
@@ -149,9 +149,9 @@ You can easily generate a new `.env` with the help of this library using reflect
 ```java
 class Configuration {
 
-  @ConfigurationItem(name = "key", value = "noValue", comment = "This is just some key")
+  @EnvironmentItem(name = "key", value = "noValue", comment = "This is just some key")
   public static String someKey;
-  @ConfigurationItem(value = "0", comment = "This is just some integer")
+  @EnvironmentItem(value = "0", comment = "This is just some integer")
   public static int someInt;
 
 }
