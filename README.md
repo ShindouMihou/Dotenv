@@ -1,3 +1,11 @@
+> **Warning**
+>
+> This is no longer being maintained due to a newer version being available with improved features.
+> You can still use this with no issues for as long as Java allows, but we recommend using the newer one
+> especially for Kotlin developers.
+>
+> https://github.com/ShindouMihou/envi
+
 ## :tada: Dotenv
 A simple, dependency-free dotenv serialization and deserialization for Java that is able to use
 reflection to fill in variables for you.
